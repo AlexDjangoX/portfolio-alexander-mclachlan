@@ -17,6 +17,7 @@ import javascript from './tech/javascript.png';
 import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
 import redux from './tech/redux.png';
+import mongodb from './tech/mongodb.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.png';
@@ -58,6 +59,7 @@ export {
   javascript,
   nodejs,
   reactjs,
+  mongodb,
   redux,
   tailwind,
   typescript,

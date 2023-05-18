@@ -7,6 +7,7 @@ import {
   html,
   css,
   reactjs,
+  mongodb,
   redux,
   tailwind,
   nodejs,
@@ -74,8 +75,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'Mongo DB',
+    icon: mongodb,
   },
   {
     name: 'Tailwind CSS',
