@@ -38,3 +38,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## canva.com
+
+search -> instagram post (square)
+-> Create blank Instagram Post
+-> Add text
+-> Select a font like Montserrat
+-> Bold
+-> Effects -> Shape -> Curve -> Adjust size and Curve
+-> Download
+
+## Erase BG - don't bother
+
+-> Upload -> Remove Background -> Download
+
+## picsvg.com - does not center svg
+
+-> create svg
