@@ -33,7 +33,7 @@ const Hero = () => {
                     <Image
                       src={alexanderProfile}
                       alt="alexander-profile-picture"
-                      className="flex self-center  xs:w-[100px] xs:h-[100px] w-[80px] h-[80px]  rounded-full "
+                      className="flex self-center aspect-w-16 aspect-h-9 xs:w-[120px] xs:h-auto w-[90px] h-auto  rounded-full "
                     />
                   </span>
                 </div>
