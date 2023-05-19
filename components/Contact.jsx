@@ -3,6 +3,9 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+import SpinText from './SpinText';
+
+import { TypingText } from './TypingText';
 import { SectionWrapper } from '../hoc';
 
 const Contact = () => {
@@ -46,7 +49,6 @@ const Contact = () => {
       )
       .then(
         () => {
-          setLoading(false);
           alert('Thank you. I will get back to you as soon as possible.');
 
           setFormData({
@@ -57,6 +59,7 @@ const Contact = () => {
           });
 
           formRef.current.reset();
+          setLoading(false);
         },
         (error) => {
           setLoading(false);
@@ -70,13 +73,16 @@ const Contact = () => {
   return (
     <section className="bg-primary">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="m b-4 text-4xl tracking-tight font-extralight text-center text-gray-300 dark:text-white">
+        <h2 className="mb-6 text-4xl tracking-tight font-extralight text-center text-gray-300 dark:text-white">
           Contact Form
         </h2>
-        <span className="h-8"></span>
-        <p className="mb-8 lg:mb-16 font-extralight text-center  text-gray-300 dark:text-gray-300 sm:text-xl">
-          Get in touch
-        </p>
+        <div className="flex justify-center align-center">
+          <SpinText />
+        </div>
+        <TypingText
+          title="Get in touch with Alexander"
+          textStyles="text-center m-6"
+        />
         <form onSubmit={handleFormSubmit} ref={formRef} className="space-y-8">
           <div>
             <label
@@ -114,7 +120,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div></div>
+
           <div>
             <label
               htmlFor="message"
@@ -132,13 +138,20 @@ const Contact = () => {
               required
             />
           </div>
-          <div>
+          <div className="flex flex-wrap justify-between">
             <button
               type="submit"
               className="green-pink-gradient p-[1px]  shadow-card text-gray py-2 px-6 rounded-md hover:bg-primary-darker transition duration-300"
             >
-              Send
+              <p>Send</p>
             </button>
+            {loading && (
+              <>
+                <p className="green-pink-gradient p-[1px]  shadow-card text-gray py-2 px-6 rounded-md hover:bg-primary-darker transition duration-300">
+                  Sending email...
+                </p>
+              </>
+            )}
           </div>
         </form>
       </div>

@@ -5,8 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Link as ScrollLink } from 'react-scroll';
 
-import SpinText from './SpinText';
-
 import { styles } from '../styles/styles.js';
 import { navLinks } from '../constants';
 import { menu, close } from '../assets';
@@ -57,18 +55,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <div className="relative">
-            <Image
-              src={logoBlack}
-              alt="logo"
-              width={80}
-              height={80}
-              className="rounded-full"
-            />
-            <div className="absolute top-[-1.9px] left-[0.02px] w-full h-full flex items-center justify-center">
-              <SpinText />
-            </div>
-          </div>
+          <Image
+            src={logoBlack}
+            alt="logo"
+            width={90}
+            height={90}
+            className="rounded-full"
+          />
 
           <p className="md:flex hidden  text-white text-[12px] font-extralight cursor-pointer ">
             Alex &nbsp;

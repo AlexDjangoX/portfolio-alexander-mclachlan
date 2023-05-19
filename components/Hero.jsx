@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import { logoAnimation } from '../utils/motion';
+import { TypingText } from './TypingText';
 
 import { styles } from '../styles/styles';
 import { logoColor, alexanderProfile } from '../assets/index.js';
@@ -27,7 +28,7 @@ const Hero = () => {
               <h1
                 className={`${styles.heroHeadText} text-white  font-extralight italic`}
               >
-                <div className="flex justify-around">
+                <div className="flex justify-around text-secondary">
                   <span>Hello, I am&nbsp;</span>
                   <span>
                     <Image
@@ -42,11 +43,13 @@ const Hero = () => {
                 </p>
               </h1>
             </div>
-            <p
-              className={`${styles.heroSubText} mt-2 mb-[32px] text-white-100 font-extralight`}
-            >
-              I develop ReactJS, NextJS fullstack web applications
-            </p>
+
+            <motion.div initial="hidden" whileInView="show">
+              <TypingText
+                title="I develop ReactJS, NextJS fullstack web applications"
+                textStyles={`${styles.heroSubText} text-secondary text-center italic font-light`}
+              />
+            </motion.div>
           </div>
 
           <div className="flex flex-col  items-center mt-5 ">
