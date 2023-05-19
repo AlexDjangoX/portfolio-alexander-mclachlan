@@ -47,7 +47,7 @@ const Hero = () => {
             <motion.div initial="hidden" whileInView="show">
               <TypingText
                 title="I develop ReactJS, NextJS fullstack web applications"
-                textStyles={`${styles.heroSubText} text-secondary text-center italic font-light`}
+                textStyles={`${styles.heroSubText} text-secondary  italic font-light flex flex-wrap mb-6`}
               />
             </motion.div>
           </div>
