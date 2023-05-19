@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
+import { TypingText } from './TypingText';
 
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -62,7 +63,12 @@ const Experience = () => {
       <motion.div className="text-center" variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText}`}>Work & Life Experience</h2>
         <span className="h-8"></span>
-        <p className={`${styles.sectionSubText}`}>The Journey Thus Far</p>
+      </motion.div>
+      <motion.div initial="hidden" whileInView="show">
+        <TypingText
+          title="The Journey Thus Far"
+          textStyles={`${styles.heroSubText} text-secondary text-center italic font-light`}
+        />
       </motion.div>
 
       <div className="mt-20 flex flex-col">

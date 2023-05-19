@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { textVariant } from '../utils/motion';
+import { TypingText } from './TypingText';
 import { styles } from '../styles/styles';
 
 import { BallCanvas } from './canvas';
@@ -11,9 +12,12 @@ const Tech = () => {
     <>
       <motion.div className="text-center" variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Tech Stack</h2>
-        <span className="h-8"></span>
-        <p className={styles.sectionSubText}>Including but not limited to...</p>
-        <span className="h-8 mb-12"></span>
+      </motion.div>
+      <motion.div initial="hidden" whileInView="show">
+        <TypingText
+          title="Tech stack, including but not limited to"
+          textStyles={`${styles.heroSubText} text-secondary text-center italic font-light`}
+        />
       </motion.div>
       <div className="  flex flex-row flex-wrap justify-center gap-10 p-12 ">
         {technologies.map((technology) => (

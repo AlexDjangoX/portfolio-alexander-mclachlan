@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
+import { TypingText } from './TypingText';
 
 import { styles } from '../styles/styles';
 import { github } from '../assets';
@@ -87,9 +88,12 @@ const Projects = () => {
     <>
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
-        <span className="h-8"></span>
-        <p className={`${styles.sectionSubText} text-center`}>Work thus far</p>
-        <span className="h-8"></span>
+      </motion.div>
+      <motion.div initial="hidden" whileInView="show">
+        <TypingText
+          title="Projects thus far"
+          textStyles={`${styles.heroSubText} text-secondary text-center italic font-light`}
+        />
       </motion.div>
       <div className="w-full flex">
         <motion.p
