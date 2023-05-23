@@ -34,12 +34,16 @@ import landing from './landing.png';
 import crypto from './crypto.png';
 import UI_ECDSA from './UI_ECDSA.jpg';
 import framerMotion from './framerMotion.png';
+import blogDark from './blogDark.png';
+import blogLight from './blogLight.png';
 
 import logoColor from './logoColor.png';
 import logoBlack from './logoBlack.png';
 import alexanderProfile from './alexanderProfile.jpg';
 
 export {
+  blogLight,
+  blogDark,
   framerMotion,
   alexanderProfile,
   logoColor,

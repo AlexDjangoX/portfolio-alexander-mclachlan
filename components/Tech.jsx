@@ -10,7 +10,7 @@ import { technologies } from '../constants/index.js';
 const Tech = () => {
   return (
     <>
-      <motion.div className="text-center" variants={textVariant()}>
+      <motion.div className="text-center min-h-full" variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Tech Stack</h2>
       </motion.div>
       <motion.div initial="hidden" whileInView="show">

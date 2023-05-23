@@ -24,6 +24,8 @@ import {
   threejs,
   UI_ECDSA,
   framerMotion,
+  blogLight,
+  blogDark,
 } from '../assets/index';
 
 export const navLinks = [
@@ -184,26 +186,49 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Landing page',
-    image: '../assets/landing.png',
-    description: 'Landing page after sign-in with auth0',
+    name: 'Blogging Website',
+    image: '../assets/blogDark.png',
+    description: 'Blog dark mode',
     tags: [
       {
-        name: 'react',
+        name: 'NextJS 13.4',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'MongoDB',
         color: 'green-text-gradient',
       },
       {
-        name: 'node/prisma',
+        name: 'Tailwind CSS',
         color: 'pink-text-gradient',
       },
     ],
-    image: landing,
+    image: blogDark,
     repo: 'Live link',
-    source_code_link: 'https://polish-conjugator.herokuapp.com/',
+    source_code_link: 'https://polish-tutor-online-blog.vercel.app/',
+    gitHubRepo: '',
+  },
+  {
+    name: 'Blogging Website',
+    image: '../assets/blogLight.png',
+    description: 'Blog light mode',
+    tags: [
+      {
+        name: 'NextJS 13.4',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'MongoDB',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Tailwind CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: blogLight,
+    repo: 'Live link',
+    source_code_link: 'https://polish-tutor-online-blog.vercel.app/',
     gitHubRepo: '',
   },
   {
