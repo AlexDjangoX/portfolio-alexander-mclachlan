@@ -22,7 +22,11 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <motion.div variants={fadeIn('up', 'spring', index * 0.5, 1)}>
+      <motion.div
+        variants={fadeIn('up', 'spring', index * 0.5, 1)}
+        initial="hidden"
+        whileInView="show"
+      >
         <Tilt
           options={{ max: 25, scale: 1, speed: 450 }}
           className="bg-tertiary p-2 rounded-2xl sm:w-[500px] w-full"
@@ -86,7 +90,7 @@ const ProjectCard = ({
 const Projects = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div initial="hidden" whileInView="show" variants={textVariant(1)}>
         <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
       </motion.div>
       <motion.div initial="hidden" whileInView="show">
@@ -97,6 +101,8 @@ const Projects = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p
+          initial="hidden"
+          whileInView="show"
           variants={fadeIn('up', 'spring', 0.5, 1)}
           className="mt-3 text-secondary text-[18px] font-extralight leading-[30px]"
         >
