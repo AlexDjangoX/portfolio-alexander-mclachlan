@@ -61,9 +61,9 @@ export const logoAnimation = () => {
 export const fadeIn = (direction, type, delay, duration) => {
   return {
     hidden: {
-      x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
-      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
-      opacity: 0,
+      x: direction === 'left' ? 25 : direction === 'right' ? -25 : 0,
+      y: direction === 'up' ? 25 : direction === 'down' ? -25 : 0,
+      opacity: 0.5,
     },
     show: {
       x: 0,

@@ -250,8 +250,8 @@ const projects = [
       },
     ],
     image: conjugate,
-    repo: 'Server side repo',
-    source_code_link: 'https://github.com/AlexDjangoX/polish-tutor-server',
+    repo: 'Live link',
+    source_code_link: 'https://conjugate-server.vercel.app/',
     gitHubRepo: '',
   },
   {
