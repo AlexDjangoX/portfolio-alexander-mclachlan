@@ -23,7 +23,8 @@ const ProjectCard = ({
   return (
     <>
       <motion.div
-        variants={fadeIn('up', 'spring', index * 0.5, 1)}
+        variants={fadeIn('up', 'spring', index * 0.1, 1)}
+        viewport={{ once: true, amount: 0.25 }}
         initial="hidden"
         whileInView="show"
       >
