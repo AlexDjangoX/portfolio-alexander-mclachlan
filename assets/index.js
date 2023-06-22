@@ -36,6 +36,7 @@ import UI_ECDSA from './UI_ECDSA.jpg';
 import framerMotion from './framerMotion.png';
 import blogDark from './blogDark.png';
 import blogLight from './blogLight.png';
+import movieLovers from './movieLovers.png';
 
 import logoColor from './logoColor.png';
 import logoBlack from './logoBlack.png';
@@ -44,6 +45,7 @@ import alexanderProfile from './alexanderProfile.jpg';
 export {
   blogLight,
   blogDark,
+  movieLovers,
   framerMotion,
   alexanderProfile,
   logoColor,

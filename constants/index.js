@@ -19,6 +19,7 @@ import {
   molecule,
   notes,
   conjugate,
+  movieLovers,
   landing,
   crypto,
   threejs,
@@ -209,26 +210,26 @@ const projects = [
     gitHubRepo: '',
   },
   {
-    name: 'Blogging Website',
-    image: '../assets/blogLight.png',
-    description: 'Blog light mode',
+    name: 'Movie Lovers App',
+    image: '../assets/movieLovers.png',
+    description: 'All in Movie Lovers App',
     tags: [
       {
-        name: 'NextJS 13.4',
+        name: 'Vite',
         color: 'blue-text-gradient',
       },
       {
-        name: 'MongoDB',
+        name: 'Redux / redux-toolkit',
         color: 'green-text-gradient',
       },
       {
-        name: 'Tailwind CSS',
+        name: 'Material UI',
         color: 'pink-text-gradient',
       },
     ],
-    image: blogLight,
+    image: movieLovers,
     repo: 'Live link',
-    source_code_link: 'https://polish-tutor-online-blog.vercel.app/',
+    source_code_link: 'https://movie-lovers-app.vercel.app/',
     gitHubRepo: '',
   },
   {

@@ -15,6 +15,9 @@ const ServiceCard = ({ index, title, icon }) => {
     <Tilt className="xs:w-[250px] w-full mx-auto">
       <motion.div
         variants={fadeIn('right', 'spring', 0.5 * index, 1.75)}
+        viewport={{ once: true, amount: 0.1 }}
+        initial="hidden"
+        whileInView="show"
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-5 min-h-[280px] flex justify-evenly items-center flex-col">
@@ -31,7 +34,13 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div className="text-center" variants={textVariant()}>
+      <motion.div
+        className="text-center"
+        viewport={{ once: false, amount: 0.1 }}
+        initial="hidden"
+        whileInView="show"
+        variants={textVariant()}
+      >
         <h2 className={styles.sectionHeadText}>About</h2>
       </motion.div>
       <motion.div initial="hidden" whileInView="show">
@@ -43,6 +52,9 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('bottom', 'spring', 1, 1)}
+        viewport={{ once: true, amount: 0.1 }}
+        initial="hidden"
+        whileInView="show"
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] tracking-wider mx-auto "
       >
         Graduated from Boolean UK Bootcamp. Skills gained include, but not

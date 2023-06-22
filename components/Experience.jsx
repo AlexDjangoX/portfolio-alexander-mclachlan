@@ -60,11 +60,21 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div className="text-center" variants={textVariant()}>
+      <motion.div
+        className="text-center"
+        variants={textVariant()}
+        viewport={{ once: false, amount: 0.1 }}
+        initial="hidden"
+        whileInView="show"
+      >
         <h2 className={`${styles.sectionHeadText}`}>Work & Life Experience</h2>
         <span className="h-8"></span>
       </motion.div>
-      <motion.div initial="hidden" whileInView="show">
+      <motion.div
+        viewport={{ once: false, amount: 0.1 }}
+        initial="hidden"
+        whileInView="show"
+      >
         <TypingText
           title="The Journey Thus Far"
           textStyles={`${styles.heroSubText} text-secondary text-center italic font-light`}

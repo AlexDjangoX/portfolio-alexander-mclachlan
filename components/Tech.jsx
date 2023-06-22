@@ -10,12 +10,22 @@ import { technologies } from '../constants/index.js';
 const Tech = () => {
   return (
     <>
-      <motion.div className="text-center" variants={textVariant()}>
+      <motion.div
+        className="text-center"
+        viewport={{ once: true, amount: 0.1 }}
+        initial="hidden"
+        whileInView="show"
+        variants={textVariant()}
+      >
         <h2 className={styles.sectionHeadText}>Tech Stack</h2>
       </motion.div>
-      <motion.div initial="hidden" whileInView="show">
+      <motion.div
+        viewport={{ once: true, amount: 0.25 }}
+        initial="hidden"
+        whileInView="show"
+      >
         <TypingText
-          title="Tech stack, including but not limited to"
+          title="Including but not limited to"
           textStyles={`${styles.heroSubText} text-secondary text-center italic font-light`}
         />
       </motion.div>
