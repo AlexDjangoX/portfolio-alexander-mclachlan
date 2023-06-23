@@ -111,8 +111,12 @@ const Projects = () => {
           Thanks to JSMastery for inspiring tutorials. And thanks to ChatGPT, my
           pair-coding partner for elucidating some points I did not understand.
           My Boolean UK journey enabled me to create the Polish Conjugator
-          full-stack application with React frontend and Node/Express backend. I
-          have decided to use NextJS in all future projects.
+          full-stack application with React frontend and Node/Express backend.
+          <br></br>
+          JSMastery has taught me about NextJS, CSS Tailwind, Material UI, redux
+          and redux-toolkit. I am looking for a good resource to build an
+          e-commerce application, with the aim of diving deeper into redux, and
+          redux-toolkit.
         </motion.p>
       </div>
 

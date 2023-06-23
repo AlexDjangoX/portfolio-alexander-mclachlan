@@ -187,32 +187,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Blogging Website',
-    image: '../assets/blogDark.png',
-    description: 'Blog dark mode',
-    tags: [
-      {
-        name: 'NextJS 13.4',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'MongoDB',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Tailwind CSS',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: blogDark,
-    repo: 'Live link',
-    source_code_link: 'https://polish-tutor-online-blog.vercel.app/',
-    gitHubRepo: '',
-  },
-  {
     name: 'Movie Lovers App',
     image: '../assets/movieLovers.png',
-    description: 'All in Movie Lovers App',
+    description: 'All in Movie Lovers App - Understanding redux-toolkit',
     tags: [
       {
         name: 'Vite',
@@ -233,9 +210,33 @@ const projects = [
     gitHubRepo: '',
   },
   {
+    name: 'Blogging Website',
+    image: '../assets/blogDark.png',
+    description: 'A deep dive into CSS Tailwind & extending app features',
+    tags: [
+      {
+        name: 'NextJS 13.4',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'MongoDB',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Tailwind CSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: blogDark,
+    repo: 'Live link',
+    source_code_link: 'https://polish-tutor-online-blog.vercel.app/',
+    gitHubRepo: '',
+  },
+
+  {
     name: 'Drag-and-drop conjugation tool',
     image: '../assets/conjugate.png',
-    description: 'Interactive verb conjugation playground',
+    description: 'React front-end, node backend, Prisma ORM, Chakra UI',
     tags: [
       {
         name: 'react',
@@ -258,7 +259,8 @@ const projects = [
   {
     name: 'Framer Motion ',
     image: '../assets/framerMotion.png',
-    description: 'Framer Motion animations website',
+    description:
+      'Learned about framer-motion for animations and three.js for 3D graphics.',
     tags: [
       {
         name: 'react/vite',
@@ -281,7 +283,7 @@ const projects = [
   {
     name: 'Universal Crypto ',
     image: '../assets/crypto.png',
-    description: 'With Metamask browser plugin, send Crypto Universally',
+    description: 'React front-end, smart contract backend',
     tags: [
       {
         name: 'react/solidity',
